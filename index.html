@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow</title>
+    <link rel="icon" href="https://img.icons8.com/pixels/32/cat.png" alt="cat"" type="image/x-icon">
+    <!-- If your favicon is in a different folder, use the path like this:
+         <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"> -->
+    <style>
+        body {
+            background-color: #E5E4E2;
+            font-family: cursive;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            font-family: cursive;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-family: cursive;
+            text-align: center;
+            margin: 0;
+            padding: 10px 0;
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        li {
+            background-color: #ccc;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        li:hover {
+            background-color: #bbb;
+            transform: translateX(10px);
+        }
+        a {
+            display: block;
+            text-align: center;
+            color: #000;
+            text-decoration: none;
+            font-weight: normal;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #555;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            h1, h2 {
+                font-size: 1.5em;
+            }
+            h3 {
+                font-size: 1em;
+            }
+            ul {
+                margin: 10px 0;
+            }
+            li {
+                padding: 10px;
+            }
+        }
+        p {
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>All About Cats</h1><br><br>
+
+<div class="image-gallery">
+    <img src="cat.jpg" alt="A Beautiful Cat" onclick="playMeow('sweet.mp3')">
+    <img src="cat 8.jpg" alt="Another Beautiful Cat" onclick="playMeow('angry.mp3')">
+    <img src="cat3.jpg" alt="Yet Another Beautiful Cat" onclick="playMeow('funny.mp3')">
+</div><br><br>
+
+<h2>Introduction</h2>
+<p>Lo, behold the cat, a creature of most curious contradiction! With fur as soft as a noble's cloak, yet a heart wild as the fiercest tempest. They prance like lords, ruling over their domain with a mere flick of the tail, only to be undone by the humble box, where they declare, "Verily, I shall fit!" Yet, when night falls, these noble beasts become mad sprites, dashing through the halls as if chased by unseen phantoms, only to return at dawn, curled in slumber as if nothing had passed. Thus is the cat, both regal and absurd, the true ruler of the household!</p>
+<br><br>
+<h2>Skills</h2>
+<ul>
+    <li><a href="https://www.youtube.com/watch?v=GySzzZ36c3s">Graceful Movements</a></li>
+    <li><a href="https://youtu.be/mdqBbvYX3MU?feature=shared">Agile Hunting</a></li>
+    <li><a href="https://www.youtube.com/watch?v=spp5vMqqSxo">Curiosity</a></li>
+    <li><a href="https://www.youtube.com/watch?v=il23o-rqSiY">Affectionate Purring</a></li>
+    <li><a href="https://www.youtube.com/watch?v=sI8NsYIyQ2A">Independence</a></li> 
+</ul><br><br>
+
+<a href="https://www.youtube.com/watch?v=BgIgKcqPd4k">Learn More About Cats here</a> <br><br>
+
+<h3>To know more about a cat person who rarely pets a cat:</h3>
+<a href="https://betelrigel.github.io/Portfolio/">Meow.com</a>
+
+<script>
+    function playMeow(audioFile) {
+        var audio = new Audio(audioFile);
+        audio.play();
+    }
+</script>
+
+</body>
+</html>
